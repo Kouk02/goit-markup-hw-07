@@ -122,7 +122,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-mobile{
-    display: inline-block;
+    max-height: 32px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -141,6 +141,7 @@ border-bottom: 1px solid #E7E9FC;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 .current {
     color: var(--color-ocean);
@@ -277,6 +278,34 @@ screen and (min-resolution: 2dppx){
     .team-item {
         margin-right: auto;
         margin-left: auto;
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .mark-img {
+        background-image: url('../images/mark@2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .tom-img {
+        background-image: url('../images/tom@2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .camila-img {
+        background-image: url('../images/camila@2x.jpg');
+    }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .daniel-img {
+        background-image: url('../images/daniel@2x.jpg');
     }
 }
 .team-section {
@@ -896,12 +925,9 @@ a.company-link:hover {
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
 }
-
-.nav-link-menu:hover,
-.nav-link-menu:focus{
+.current {
     color: var(--color-ocean);
 }
-
 
 .menu-list-contact:not(:last-child){
     margin-bottom: 40px;
@@ -913,7 +939,7 @@ a.company-link:hover {
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: var(--color-navy-blue);
+    color: var(--color-ocean);
 }
 .contacts-menu-tel:hover,
 .contacts-menu-tel:focus{

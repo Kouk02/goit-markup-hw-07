@@ -39,6 +39,9 @@
     padding-bottom: 25px;
     transition: color var(--typical-transition);
 }
+.current {
+    color: var(--color-ocean);
+}
 .address-link{
     display: flex;
     align-items: center;
@@ -121,7 +124,7 @@ screen and (min-resolution: 2dppx){
     text-align: left;
 }
 .list-text {
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-slate);
@@ -152,7 +155,9 @@ screen and (min-resolution: 2dppx){
 /** ============================================Team Section */
 @media screen and (max-width: 1157px){
     .team-container{
-        width:592px
+        width:582px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 .team-list {
@@ -165,8 +170,8 @@ screen and (min-resolution: 2dppx){
 /** ==============================================Customers Section*/
 @media screen and (max-width: 1157px){
     .customers-container{
-    padding: 96px 0px;
-    max-width: 592px;
+    padding: 96px 15px;
+    max-width: 582px;
     }
     }
 .company-item {
@@ -182,7 +187,6 @@ screen and (min-resolution: 2dppx){
     flex-wrap: wrap;
     gap: 72px 24px;
     width: 582px;
-    height: 264px;
     padding-right: 15px;
     padding-left: 15px;
     }
