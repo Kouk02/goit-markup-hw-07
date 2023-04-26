@@ -17,6 +17,9 @@
 .header-link {
     margin-right: 120px;
 }
+.list-header:first-child a {
+    margin-bottom: 12px;
+}
 }
 
 .header-nav {
@@ -46,9 +49,7 @@
     display: flex;
     align-items: center;
 }
-.list-header:last-child a{
-    margin-top: 12px;
-}
+
 
 .current::after {
     content: "";
@@ -176,10 +177,17 @@ screen and (min-resolution: 2dppx){
     }
 .company-item {
     max-width: 168px;
-    flex-basis: calc((100% - 72px)/3);
+    flex-basis: calc((100% - 24px) / 3);
 }
-.company-link {
-    padding: 16px 32px;
+
+.company-link{
+    max-width: 168px;
+}
+.section-company{
+    display: block;
+}
+.company-list {
+    gap: 72px 24px;
 }
 /** ========================================================= footer */
 @media screen and (max-width: 1157px){

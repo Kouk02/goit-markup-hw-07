@@ -280,34 +280,7 @@ screen and (min-resolution: 2dppx){
         margin-left: auto;
     }
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .mark-img {
-        background-image: url('../images/mark@2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .tom-img {
-        background-image: url('../images/tom@2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .camila-img {
-        background-image: url('../images/camila@2x.jpg');
-    }
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .daniel-img {
-        background-image: url('../images/daniel@2x.jpg');
-    }
-}
+
 .team-section {
     padding-bottom: 96px;
     padding-top: 96px;
@@ -379,9 +352,11 @@ screen and (min-resolution: 2dppx){
 /** ==============================================Customers Section*/
 @media screen and (max-width: 767px){
 .section-company {
-        display: block;
         padding-top: 96px;
         padding-bottom: 96px;
+    }
+    .company-list{
+        gap: 72px 16px;
     }
 }
 
@@ -389,10 +364,9 @@ screen and (min-resolution: 2dppx){
 .company-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
 }
 .company-item {
-    flex-basis: calc((100% - 72px)/2);
+    flex-basis: calc((100% - 16px) / 2);
 }
 .company-icon {
     fill: var(--color-light-slate);
@@ -405,7 +379,7 @@ screen and (min-resolution: 2dppx){
     align-items: center;
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
-    padding: 23px 40px;
+    height: 88px;
     transition: border-color var(--typical-transition);
 }
 .title-company {
@@ -886,6 +860,13 @@ a.company-link:hover {
     max-width: 428px;
     }
 }
+@media screen and (max-width: 767px) {
+    .menu-item-modal {
+        max-width:  428px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .modal-window-menu {    
     position: fixed;
     top: 0;
@@ -897,6 +878,7 @@ a.company-link:hover {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    margin: 0 auto;
 }
 .modal-window-menu.is-hidden {    
     opacity: 0;
@@ -906,6 +888,7 @@ a.company-link:hover {
 
 
 .menu-item-modal{
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -993,7 +976,6 @@ a.company-link:hover {
 }
 .messeng-list-menu {
     display: flex;
-    margin-top: 8px;
 }
 .messeng-link-menu {
     display: flex;
